@@ -45,3 +45,34 @@ The HeapFileScan class, derived from the HeapFile class, provides the functional
 ### 4. InsertFileScan Class
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
+# CS 564 Project Stage 6: Minirel Query and Update Operators
+
+## Project Overview
+
+In this project, our focus lies on the construction and implementation of query and update operators for Minirel databases. Our project encompasses the implementation of selection, projection, insertion, and deletion operators. The parser provided, an integral part of this project, is designed to parse SQL-like commands and initiate appropriate backend calls.
+
+## Key Features
+
+### Minirel SQL DML Commands
+
+Minirel supports a simplified variant of SQL query language. The syntax structure is outlined in a pseudo context-free grammar, a continuation from project's Part 5. It includes both query and update statements.
+
+### Query Structure and Formatting
+
+Queries can either be displayed on-screen or stored in a relation. To simplify the on-screen display, the Minirel query interpreter generates a temporary relation which is subsequently printed and deleted. The project also includes specifications for attributes in target lists, target table lists, and qualifications.
+
+### Update Operations
+
+The project implements update operations in the form of insert or delete actions. The Minirel does not support modification of the value of an existing tuple in a relation.
+
+### Implementing the Relational Operators
+
+The project involves the implementation of several routines including QU_Select, QU_Join, QU_Delete, and QU_Insert. These are executed by the parser in response to various user-submitted SQL statements.
+
+## Additional Information
+
+This project offers a great opportunity to delve into the implementation of database operations and to gain hands-on experience with SQL-like commands. It's an ideal platform to showcase strong database management skills and understanding of SQL operations.
+
+## About this Repository
+
+This repository contains code and resources for implementing query and update operators for Minirel databases, as part of CS 564 Project Stage 6. The code can be a valuable reference for anyone looking to understand the intricacies of database operations and SQL-like command parsing. We hope it serves as a comprehensive guide and helps you navigate the complexities of SQL and database management.
