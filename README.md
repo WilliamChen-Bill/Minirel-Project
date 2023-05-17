@@ -20,47 +20,47 @@ In the final stage, we delve into the creation and implementation of query and u
 
 ### Project Stage 3 - The Buffer Manager
 
-### BufHashTbl Class
+#### BufHashTbl Class
 
 The `BufHashTbl` class is a hash table that maps file and page numbers to buffer pool frames, implemented using chained bucket hashing.
 
-### BufDesc Class
+#### BufDesc Class
 
 The `BufDesc` class is responsible for keeping track of the state of each frame in the buffer pool, including information about the page, the frame, pin count, and dirty and valid flags.
 
-### BufMgr Class
+##### BufMgr Class
 
 The `BufMgr` class is the core of the buffer manager. It involves methods such as `allocBuf()`, `readPage()`, `unPinPage()`, `allocPage()`, and `flushFile()` to manage buffer frames and pages.
 
 ### Project Stage 4 - Minirel HeapFile Manager
 
-### 1. FileHdrPage Class
+#### 1. FileHdrPage Class
 The FileHdrPage class is responsible for implementing a heap file using a linked list of pages. Each heap file comprises one instance of the FileHdrPage class and one or more data pages. This class also includes two critical functions, `createHeapFile()` and `destroyHeapFile()`, which create an empty heap file and delete a heap file, respectively.
 
-### 2. HeapFile Class
+#### 2. HeapFile Class
 The HeapFile class provides a mechanism for managing heap files, including the ability to add and delete records. The class also enables scanning all records in a file. A HeapFile class instance loads the heap file, reads the file header page, and the first data page into the buffer pool.
 
-### 3. HeapFileScan Class
+#### 3. HeapFileScan Class
 The HeapFileScan class, derived from the HeapFile class, provides the functionality to retrieve all records from a HeapFile, retrieve records matching a specific predicate, and delete records in a file. This class can have multiple instances simultaneously operating on the same file.
 
-### 4. InsertFileScan Class
+#### 4. InsertFileScan Class
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
 ### Project Stage 6 - Minirel Query and Update Operators
 
-### Minirel SQL DML Commands
+#### Minirel SQL DML Commands
 
 Minirel supports a simplified variant of SQL query language. The syntax structure is outlined in a pseudo context-free grammar, a continuation from project's Part 5. It includes both query and update statements.
 
-### Query Structure and Formatting
+#### Query Structure and Formatting
 
 Queries can either be displayed on-screen or stored in a relation. To simplify the on-screen display, the Minirel query interpreter generates a temporary relation which is subsequently printed and deleted. The project also includes specifications for attributes in target lists, target table lists, and qualifications.
 
-### Update Operations
+#### Update Operations
 
 The project implements update operations in the form of insert or delete actions. The Minirel does not support modification of the value of an existing tuple in a relation.
 
-### Implementing the Relational Operators
+#### Implementing the Relational Operators
 
 The project involves the implementation of several routines including QU_Select, QU_Join, QU_Delete, and QU_Insert. These are executed by the parser in response to various user-submitted SQL statements.
 
