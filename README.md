@@ -26,10 +26,6 @@ The `BufDesc` class is responsible for keeping track of the state of each frame 
 
 The `BufMgr` class is the core of the buffer manager. It involves methods such as `allocBuf()`, `readPage()`, `unPinPage()`, `allocPage()`, and `flushFile()` to manage buffer frames and pages.
 
-### Contributing to the Project
-
-This project offers a solid foundation for anyone interested in learning the architecture of a DBMS. It is a great opportunity to not only learn the theoretical aspects but also get hands-on experience in building a database system. Contribute to this project to improve your understanding of DBMS and to make a positive impact on your resume for recruiters.
-
 # Project: Minirel HeapFile Manager
 
 ## Overview
