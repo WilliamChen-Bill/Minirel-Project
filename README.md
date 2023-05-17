@@ -45,5 +45,3 @@ The HeapFileScan class, derived from the HeapFile class, provides the functional
 ### 4. InsertFileScan Class
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
-## Conclusion
-The Minirel HeapFile Manager is a comprehensive project that showcases proficiency in file management systems. It is designed to simulate real-world scenarios and challenges, making it an excellent portfolio piece for potential employers or collaborators. If you're interested in database management, file manipulation, or just want to appreciate a well-crafted project, take a closer look at the code!
