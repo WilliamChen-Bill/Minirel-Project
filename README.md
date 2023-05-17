@@ -29,3 +29,25 @@ The `BufMgr` class is the core of the buffer manager. It involves methods such a
 ### Contributing to the Project
 
 This project offers a solid foundation for anyone interested in learning the architecture of a DBMS. It is a great opportunity to not only learn the theoretical aspects but also get hands-on experience in building a database system. Contribute to this project to improve your understanding of DBMS and to make a positive impact on your resume for recruiters.
+
+# Project: Minirel HeapFile Manager
+
+## Overview
+The Minirel HeapFile Manager is a robust database file manager system developed as part of the CS 564 curriculum. This system is designed to manage Heap Files, providing a scanning mechanism that facilitates searching heap files for records adhering to a specified filter or search predicate. The distinct feature of Heap Files in comparison to DB layer files is their logical ordering on pages via a linked list, as opposed to the DB layer's physical ordering.
+
+## Key Components
+
+### 1. FileHdrPage Class
+The FileHdrPage class is responsible for implementing a heap file using a linked list of pages. Each heap file comprises one instance of the FileHdrPage class and one or more data pages. This class also includes two critical functions, `createHeapFile()` and `destroyHeapFile()`, which create an empty heap file and delete a heap file, respectively.
+
+### 2. HeapFile Class
+The HeapFile class provides a mechanism for managing heap files, including the ability to add and delete records. The class also enables scanning all records in a file. A HeapFile class instance loads the heap file, reads the file header page, and the first data page into the buffer pool.
+
+### 3. HeapFileScan Class
+The HeapFileScan class, derived from the HeapFile class, provides the functionality to retrieve all records from a HeapFile, retrieve records matching a specific predicate, and delete records in a file. This class can have multiple instances simultaneously operating on the same file.
+
+### 4. InsertFileScan Class
+The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
+
+## Conclusion
+The Minirel HeapFile Manager is a comprehensive project that showcases proficiency in file management systems. It is designed to simulate real-world scenarios and challenges, making it an excellent portfolio piece for potential employers or collaborators. If you're interested in database management, file manipulation, or just want to appreciate a well-crafted project, take a closer look at the code!
