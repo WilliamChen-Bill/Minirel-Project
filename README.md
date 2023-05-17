@@ -16,9 +16,9 @@ The fourth stage introduces the robust Minirel HeapFile Manager. This stage enca
 
 In the final stage, we delve into the creation and implementation of query and update operators for Minirel databases. This stage encapsulates the implementation of crucial operators such as selection, projection, insertion, and deletion. A provided parser, integral to this project, parses SQL-like commands and triggers appropriate backend calls.
 
-## Project Stage 3 - The Buffer Manager
+## Key Components & Features
 
-## Key Components
+## Project Stage 3 - The Buffer Manager
 
 ### BufHashTbl Class
 
@@ -34,8 +34,6 @@ The `BufMgr` class is the core of the buffer manager. It involves methods such a
 
 ## Project Stage 4 - Minirel HeapFile Manager
 
-## Key Components
-
 ### 1. FileHdrPage Class
 The FileHdrPage class is responsible for implementing a heap file using a linked list of pages. Each heap file comprises one instance of the FileHdrPage class and one or more data pages. This class also includes two critical functions, `createHeapFile()` and `destroyHeapFile()`, which create an empty heap file and delete a heap file, respectively.
 
@@ -49,8 +47,6 @@ The HeapFileScan class, derived from the HeapFile class, provides the functional
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
 ## Project Stage 6 - Minirel Query and Update Operators
-
-## Key Features
 
 ### Minirel SQL DML Commands
 
