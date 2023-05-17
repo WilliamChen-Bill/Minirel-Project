@@ -18,7 +18,7 @@ In the final stage, we delve into the creation and implementation of query and u
 
 ## Key Components & Features
 
-## Project Stage 3 - The Buffer Manager
+### Project Stage 3 - The Buffer Manager
 
 ### BufHashTbl Class
 
@@ -32,7 +32,7 @@ The `BufDesc` class is responsible for keeping track of the state of each frame 
 
 The `BufMgr` class is the core of the buffer manager. It involves methods such as `allocBuf()`, `readPage()`, `unPinPage()`, `allocPage()`, and `flushFile()` to manage buffer frames and pages.
 
-## Project Stage 4 - Minirel HeapFile Manager
+### Project Stage 4 - Minirel HeapFile Manager
 
 ### 1. FileHdrPage Class
 The FileHdrPage class is responsible for implementing a heap file using a linked list of pages. Each heap file comprises one instance of the FileHdrPage class and one or more data pages. This class also includes two critical functions, `createHeapFile()` and `destroyHeapFile()`, which create an empty heap file and delete a heap file, respectively.
@@ -46,7 +46,7 @@ The HeapFileScan class, derived from the HeapFile class, provides the functional
 ### 4. InsertFileScan Class
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
-## Project Stage 6 - Minirel Query and Update Operators
+### Project Stage 6 - Minirel Query and Update Operators
 
 ### Minirel SQL DML Commands
 
