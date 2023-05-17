@@ -45,7 +45,7 @@ The HeapFileScan class, derived from the HeapFile class, provides the functional
 ### 4. InsertFileScan Class
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
-# CS 564 Project Stage 6: Minirel Query and Update Operators
+## Project Stage 6 - Minirel Query and Update Operators
 
 ## Project Overview
 
@@ -69,10 +69,5 @@ The project implements update operations in the form of insert or delete actions
 
 The project involves the implementation of several routines including QU_Select, QU_Join, QU_Delete, and QU_Insert. These are executed by the parser in response to various user-submitted SQL statements.
 
-## Additional Information
 
-This project offers a great opportunity to delve into the implementation of database operations and to gain hands-on experience with SQL-like commands. It's an ideal platform to showcase strong database management skills and understanding of SQL operations.
 
-## About this Repository
-
-This repository contains code and resources for implementing query and update operators for Minirel databases, as part of CS 564 Project Stage 6. The code can be a valuable reference for anyone looking to understand the intricacies of database operations and SQL-like command parsing. We hope it serves as a comprehensive guide and helps you navigate the complexities of SQL and database management.
