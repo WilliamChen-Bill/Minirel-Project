@@ -26,7 +26,7 @@ The `BufDesc` class is responsible for keeping track of the state of each frame 
 
 The `BufMgr` class is the core of the buffer manager. It involves methods such as `allocBuf()`, `readPage()`, `unPinPage()`, `allocPage()`, and `flushFile()` to manage buffer frames and pages.
 
-# Project: Minirel HeapFile Manager
+## Project Stage 4 - Minirel HeapFile Manager
 
 ## Overview
 The Minirel HeapFile Manager is a robust database file manager system developed as part of the CS 564 curriculum. This system is designed to manage Heap Files, providing a scanning mechanism that facilitates searching heap files for records adhering to a specified filter or search predicate. The distinct feature of Heap Files in comparison to DB layer files is their logical ordering on pages via a linked list, as opposed to the DB layer's physical ordering.
