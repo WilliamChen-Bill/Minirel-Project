@@ -6,6 +6,25 @@ This project aims to guide you through the intricacies of building a database ma
 
 The project includes a parser (the topmost layer) and a disk I/O layer (the lowest layer). The parser processes SQL queries and calls the relevant functions in the lower layers to execute relational operations. The disk I/O layer handles the reading and writing of pages from and to the disk, which in this case, is the UNIX file system.
 
+# CS 564 Project Overview
+
+Welcome to our comprehensive CS 564 project repository, an immersive journey through the intricacies of building a fully functional, single-user database management system (DBMS) capable of processing simple SQL queries. This multi-stage project endeavors to provide a hands-on understanding of DBMS structures and operations during query executions.
+
+## Stage 3 - The Buffer Manager
+
+Here, we lay the foundations of our DBMS with two primary components: the parser and the disk I/O layer. The parser handles SQL queries, invoking relevant functions in lower layers for performing relational operations. The disk I/O layer is responsible for the essential task of reading from and writing to the UNIX file system.
+
+## Stage 4 - Minirel HeapFile Manager
+
+The fourth stage introduces the robust Minirel HeapFile Manager. This stage encapsulates the management of Heap Files, offering a scanning mechanism for searching records based on specified predicates. The distinguishing feature of Heap Files is their logical ordering on pages using a linked list, a contrast to the physical ordering in DB layer files.
+
+## Stage 6 - Minirel Query and Update Operators
+
+In the final stage, we delve into the creation and implementation of query and update operators for Minirel databases. This stage encapsulates the implementation of crucial operators such as selection, projection, insertion, and deletion. A provided parser, integral to this project, parses SQL-like commands and triggers appropriate backend calls.
+
+This repository represents a holistic exploration of DBMS development, beginning with rudimentary disk I/O operations to more sophisticated operations like SQL-like command parsing and heap file management. It's a perfect starting point for anyone interested in understanding the practical aspects of database operations and management.
+
+
 ## Project Stage 3 - The Buffer Manager
 
 The third part of the project involves the development of a buffer manager for the DBMS, termed "Minirel". The buffer manager controls which database pages are memory resident at any given time, efficiently managing the limited memory resources available compared to the size of the database on disk.
