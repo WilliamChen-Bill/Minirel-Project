@@ -18,11 +18,7 @@ In the final stage, we delve into the creation and implementation of query and u
 
 ## Project Stage 3 - The Buffer Manager
 
-The third part of the project involves the development of a buffer manager for the DBMS, termed "Minirel". The buffer manager controls which database pages are memory resident at any given time, efficiently managing the limited memory resources available compared to the size of the database on disk.
-
-The buffer manager uses the clock algorithm for buffer replacement, a strategy that approximates the least recently used (LRU) behavior, but with a significantly faster execution speed.
-
-You will also work with three C++ classes: `BufMgr`, `BufDesc`, and `BufHashTbl` to create the structure of the buffer manager.
+## Key Components
 
 ### BufHashTbl Class
 
@@ -37,9 +33,6 @@ The `BufDesc` class is responsible for keeping track of the state of each frame 
 The `BufMgr` class is the core of the buffer manager. It involves methods such as `allocBuf()`, `readPage()`, `unPinPage()`, `allocPage()`, and `flushFile()` to manage buffer frames and pages.
 
 ## Project Stage 4 - Minirel HeapFile Manager
-
-## Overview
-The Minirel HeapFile Manager is a robust database file manager system developed as part of the CS 564 curriculum. This system is designed to manage Heap Files, providing a scanning mechanism that facilitates searching heap files for records adhering to a specified filter or search predicate. The distinct feature of Heap Files in comparison to DB layer files is their logical ordering on pages via a linked list, as opposed to the DB layer's physical ordering.
 
 ## Key Components
 
@@ -56,10 +49,6 @@ The HeapFileScan class, derived from the HeapFile class, provides the functional
 The InsertFileScan class, derived from the HeapFile class, offers the capability to insert records into a file.
 
 ## Project Stage 6 - Minirel Query and Update Operators
-
-## Project Overview
-
-In this project, our focus lies on the construction and implementation of query and update operators for Minirel databases. Our project encompasses the implementation of selection, projection, insertion, and deletion operators. The parser provided, an integral part of this project, is designed to parse SQL-like commands and initiate appropriate backend calls.
 
 ## Key Features
 
